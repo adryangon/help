@@ -45,3 +45,5 @@ while True:
     if len(cpf) == 9:
         print('Seu CPF é ' + cpfprocurado + '-' + digitos)
     break
+
+# Comp.
