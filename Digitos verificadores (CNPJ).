@@ -10,15 +10,52 @@ def somentenumeros(entrada: object) -> bool:
 while True:
 
     while True:
-        cnpj = input ('Digite os sete primeiros digitos de seu CPF:')
-        if somentenumeros(cnpj) and (len(cnpj) !=7):
-            filial = input ('Digite os 4 digitos da filial em questão:')
+        cnpj = input ('Digite os sete primeiros digitos de seu CPF: ')
+        if somentenumeros(cnpj) and (len(cnpj) == 7):
+            filial = input ('Digite os 4 digitos da filial em questão: ')
             break
         else:
             print ('Erro! Valor digitado é invalido.')
 
-x = [int(i) for i in list (cnpj)]
-y =
+    x = [int(i) for i in list (cnpj)]
+    if (x[0] * 2) > 10:
+        x[0] = (x[0] * 2) - 9
+    else:
+        x[0] = (x[0] * 2)
+    if (x[1] * 1) > 10:
+        x[1] = (x[1] * 1) - 9
+    else:
+        x[1] = (x[1] * 1)
+    if (x[2] * 2) > 10:
+        x[2] = (x[2] * 2) - 9
+    else:
+        x[2] = (x[2] * 2)
+    if (x[3] * 1) > 10:
+        x[3] = (x[3] * 1) - 9
+    else:
+        x[3] = (x[3] * 1)
+    if (x[4] * 2) > 10:
+        x[4] = (x[4] * 2) - 9
+    else:
+        x[4] = (x[4] * 2)
+    if (x[5] * 1) > 10:
+        x[5] = (x[5] * 1) - 9
+    else:
+        x[5] = (x[5] * 1)
+    if (x[6] * 2) > 10:
+        x[6] = (x[6] * 2) - 9
+    else:
+        x[6] = (x[6] * 2)
+
+    y = x[0] + x[1] + x[2] + x[3] + x[4] + x[5] + x[6]
+
+    d1 = 10 - (y % 10)
+
+# Digito verificador 1 encontrado.
+
+    cnpjParcial = str(cnpj) + str(d1)
+    print ('CNPJ parcial é '+cnpjParcial)
+    
 
 
 
