@@ -86,10 +86,11 @@ while True:
     else:
         d3 = c
 
+# Digito verificador 3 encontrado.
+
     digitosFinais = str(d2) + str(d3)
     cnpjCompleto = cnpjParcial + digitosFinais
 
-    print ('Seu CNPJ completo é: ' + cnpjCompleto)
-    break    
+    print ('Seu CNPJ completo é: ' + cnpjCompleto)    
     
 # Comp.
