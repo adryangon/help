@@ -1,0 +1,43 @@
+# Calcular pascoa em Python.
+
+import math
+
+def somentenumeros(entrada: object) -> bool:
+    try:
+        int(entrada)
+        return True
+    except:
+        return False
+
+def inputnumerico(texto: str) -> int:
+    while True:
+        numero = input(texto)
+        if not somentenumeros(numero) or (len(numero) !=4):
+            print ('Erro! O ano digitado é invalido,')
+        else:
+            return numero
+while True:
+
+	ano = int(inputnumerico('Digite o ano cujo você quer descobrir a data da pascoa: '))
+	
+	A = ano%19
+	B = math.floor(ano/100)
+	C = ano%100
+	D = math.floor(B/4)
+	E = B%4
+	F = math.floor((B+8))/25
+	G = math.floor((1+B-F))/3
+	H = ((19*A)+B+15-(D+G))%30
+	I = math.floor(C/4)
+	K = C%4
+	L = (32+(2*E)+(2*I)-(H+K))%7
+	M = math.floor((A+(11*H)+(22*L))/451)
+	P = math.floor((H+L+114-(7*M))/31)
+	Q = (H+L+114-(7*M))%31
+	
+	print ('A páscoa deste ano será no dia: ' + str(int(Q+1)) + '/' + str(P))
+
+# Desenvolvido por: @dygonn
+# www.github.com/dygonn
+# Créditos: @vnbrs
+# Incomp.
