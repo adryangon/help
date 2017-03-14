@@ -23,35 +23,38 @@ while True:
     if (x[0] * 2) > 9:
         x[0] = (x[0] * 2) - 9
     else:
-        x[0] = (x[0] * 2)
+        x[0] = x[0] * 2
     if (x[1] * 1) > 9:
         x[1] = (x[1] * 1) - 9
     else:
-        x[1] = (x[1] * 1)
+        x[1] = x[1] * 1
     if (x[2] * 2) > 9:
         x[2] = (x[2] * 2) - 9
     else:
-        x[2] = (x[2] * 2)
+        x[2] = x[2] * 2
     if (x[3] * 1) > 9:
         x[3] = (x[3] * 1) - 9
     else:
-        x[3] = (x[3] * 1)
+        x[3] = x[3] * 1
     if (x[4] * 2) > 9:
         x[4] = (x[4] * 2) - 9
     else:
-        x[4] = (x[4] * 2)
+        x[4] = x[4] * 2
     if (x[5] * 1) > 9:
         x[5] = (x[5] * 1) - 9
     else:
-        x[5] = (x[5] * 1)
+        x[5] = x[5] * 1
     if (x[6] * 2) > 9:
         x[6] = (x[6] * 2) - 9
     else:
-        x[6] = (x[6] * 2)
+        x[6] = x[6] * 2
 
     y = x[0] + x[1] + x[2] + x[3] + x[4] + x[5] + x[6]
 
-    d1 = 10 - (y % 10)
+    if (y % 10) == 0:
+        d1 = 0
+    else:
+        d1 = 10 - (y % 10)
 
 # Digito verificador 1 encontrado.
 
@@ -93,4 +96,4 @@ while True:
 
     print ('Seu CNPJ completo é: ' + cnpjCompleto)    
     
-# Incomp.
+# Comp.
