@@ -95,5 +95,7 @@ while True:
     cnpjCompleto = cnpjParcial + digitosFinais
 
     print ('Seu CNPJ completo é: ' + cnpjCompleto)    
-    
+
+# Desenvolvido por: @dygonn
+# www.github.com/dygonn
 # Comp.
