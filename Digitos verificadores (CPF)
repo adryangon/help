@@ -1,5 +1,4 @@
 # Digito verificador (CPF)
-# Créditos: @vnbrs
 
 def somentenumeros(entrada: object) -> bool:
     try:
@@ -46,4 +45,7 @@ while True:
         print('Seu CPF é ' + cpfprocurado + '-' + digitos)
     break
 
+# Desenvolvido por: @dygonn
+# www.github.com/dygonn
+# Créditos: @vnbrs
 # Comp.
