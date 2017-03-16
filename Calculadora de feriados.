@@ -35,7 +35,8 @@ while True:
     P = math.floor((H+L+114-(7*M))/31)
     Q = (H+L+114-(7*M))%31
 
-    print ('A páscoa deste ano será no dia: ' + str(int(Q+1)) + '/' + str(P))
+    print ('Os feriados deste ano serão nas seguintes datas:')
+    print ('Páscoa: ' + str(int(Q+1)) + '/' + str(P))
     
     x = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)        
     y = [0,0,0,0,0,0,0,0,0,0,0,0]
@@ -54,7 +55,7 @@ while True:
       i = i + 1
     ee = dd - y [i-1]
     
-    print ('Corpus Christi será em: '+str(int(ee))+'/'+str(i))
+    print ('Corpus Christi: '+str(int(ee))+'/'+str(i))
     
     i = 0
     dd = dd - (60+47)
@@ -62,8 +63,19 @@ while True:
         i = i + 1
     ee = dd - y [i-1]
     
-    print ('E o arnaval cai em: '+str(int(ee))+'/'+str(i))
+    print ('Carnaval: '+str(int(ee))+'/'+str(i))
 
+    i = 0
+    dd = dd + (47-2)
+    while y[i] < dd:
+        i = i + 1
+    ee = dd - y [i-1]
+
+    print ('Sexta-feira Santa: '+str(int(ee))+'/'+str(i))
+    print ('Desenvolvido por: @dygonn')
+
+    break
+    
 # Desenvolvido por: @dygonn
 # www.github.com/dygonn
 # Créditos: @vnbrs, pkantek.
