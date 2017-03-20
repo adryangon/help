@@ -54,12 +54,12 @@ while True:
         R = 'Quinta-feira'
     if R == 6:
         R = 'Sexta-feira'
-    if R == 7:
+    if R == 0:
         R = 'Sábado'
 
 # Dia da semana convertido em texto.
 
-    print('Este dia será um(a): ' + R + '.')
+    print('Este dia será um(a): ' + str(R) + '.')
     print('Desenvolvido por: @dygonn')
 
     break
